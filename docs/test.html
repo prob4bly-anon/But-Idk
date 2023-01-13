@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Terminal and Homepage </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content='width=device-width, inital-scalw=1'/>
+  <link rel="stylesheet" href="https://unpkg.com/xterm@3.14.5/dist/xterm.css" />
+</head>
+
+<body>
+    <div id="terminal" style="display: block;"></div>
+    <div id="homepage" style="display: none;"></div>
+    <script>
+    var term = new Terminal();
+    term.open(document.getElementById('terminal'));
+    term.fit();
+    term.writeln('Welcome to the terminal, type "help" for a list of commands.');
+    </script>
+    <script>
+      function showHomepage() {
+        document.getElementById("terminal").style.display = "none";
+        document.getElementById("homepage").style.display = "block";
+        term.destroy();
+      }
+    </script>
+    <script>
+      function showTerminal() {
+        document.getElementById("terminal").style.display = "block";
+        document.getElementById("homepage").style.display = "none";
+        term = new Terminal();
+        term.open(document.getElementById('terminal'));
+        term.fit();
+        term.writeln('Welcome to the terminal, type "help" for a list of commands.');
+      }
+    </script>
+</body>
+</html>
