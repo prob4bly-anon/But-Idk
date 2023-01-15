@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> • Dugresh (@prob4bly_anon)</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content='width=device-width, inital-scalw=1'/>
-  <link rel="stylesheet" href="https://unpkg.com/98.css" />
-</head>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/98.css/dist/98.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="p-4">
+      <header>
+        <h1 class="text-xl font-medium">Durgesh</h1>
+        <nav class="text-sm">
+          <ul>
+            <li><a href="#about-me" class="text-blue-500">About Me</a></li>
+            <li><a href="#what-im-up-to" class="text-blue-500">What I'm Up To</a></li>
+            <li><a href="#projects" class="text-blue-500">Projects</a></li>
+            <li><a href="#contact" class="text-blue-500">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-<body>
-  <div class="window" style="margin: 32px; width: 250px">
-    <div class="title-bar">
-      <div class="title-bar-text">
-	Microsoft Windows
-      </div>
+      <section id="about-me" class="my-4">
+        <h2 class="text-lg font-medium">About Me</h2>
+        <p class="text-sm">Known as @prob4bly-anon on GitHub. Passionate about programming and software development. Proficient in Python, SQL, JS, Bash. Currently pursuing a career in programming and computer science. You can also find me on Instagram as @prob4bly_anon. High-school student.</p>
+      </section>
+
+      <section id="what-im-up-to" class="my-4">
+        <h2 class="text-lg font-medium">What I'm Up To</h2>
+        <h3 class="text-base font-medium">Currently working on...</h3
+        <p class="text-sm">Learning something new every day.</p>
+        <h3 class="text-base font-medium">In the near future, I hope to...</h3>
+        <p class="text-sm">Improve my skills in a specific area of programming.</p>
+        <h3 class="text-base font-medium">One day, I hope to...</h3>
+        <p class="text-sm">Use my skills to contribute to open-source projects and make a positive impact on the community.</p>
+      </section>
+
+      <section id="projects" class="my-4">
+        <h2 class="text-lg font-medium">Projects</h2>
+        <div class="my-2">
+            <h3 class="text-base font-medium">Ransomware Program</h3>
+            <p class="text-sm">A program that encrypts the user's files and demands a ransom to be paid in order to restore access to the files.</p>
+            <a href="https://github.com/prob4bly-anon/ransomware" class="text-blue-500">View on GitHub</a>
+        </div>
+        <div class="my-2">
+            <h3 class="text-base font-medium">Discord Nuke Bot</h3>
+            <p class="text-sm">A bot for the Discord chat platform that can nuke discord servers efficiently.</p>
+            <a href="https://github.com/prob4bly-anon/Discord-Nuker" class="text-blue-500">View on GitHub</a>
+        </div>
+      </section>
+
+      <section id="contact" class="my-4">
+        <h2 class="text-lg font-medium">Contact</h2>
+        <form class="text-sm" action="/handle_post" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+      </section>
     </div>
-    <div class="window-body">
-	    <p>This program is not ear
-	    esponding. It may be busy, waiting for a response from you, or it may have stopped running. <br> <br> -  Click Cancel to return to Windows. <br> <br> - To close this program immediately, click End Task.<br>   You will lose any unsaved information in this program.</p>
-      <section class="field-row" style="justify-content: flex-end">
-          <button>End Task</button>
-          <button>Cancel</button>
-        </section>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
