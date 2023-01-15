@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: #48f73b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+nav {
+    margin: 0;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #48f73b;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #aaaaaa;
+}
+
+section#about-me {
+    text-align: center;
+}
+
+section#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#projects div {
+    flex-basis: 30%;
+}
+
+section#projects a {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+
+section#contact {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+form input[type="submit"] {
+    background-color: #48f73b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3ebf6b;
+}
