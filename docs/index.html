@@ -1,99 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>• Durgesh™ (@prob4bly_anon)</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="Durgesh™">
-        <meta name="description" content="A passionate and aspiring software developer.">
-        <meta name="keywords" content="software development, web development, programming">
-        <meta property="og:title" content="Durgesh™">
-        <meta property="og:description" content="A passionate and aspiring software developer.">
-        <meta property="og:image" content="https://github.com/prob4bly-anon/Prob4bly-anon/raw/main/assets/PicsArt_06-06-04.42.03.jpg">
-        <meta property="og:url" content="https://github.com/prob4bly-anon">
-        <link rel="canonical" href="https://prob4bly-anon.tk/">
-        <link rel="stylesheet" href="https://unpkg.com/98.css">
-        <link rel="stylesheet" href="style/main.css">
-    </head>
-    <body style='background-color: grey;'>
-         <script>
-            function openTab(event, tabId) {
-             var tabContent = document.getElementsByClassName("tabcontent");
-             for (var i = 0; i < tabContent.length; i++) {
-               tabContent[i].style.display = "none";
-             }
-             var tabLinks = document.getElementsByClassName("tablinks");
-             for (var i = 0; i < tabLinks.length; i++) {
-               tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-             }
-             document.getElementById(tabId).style.display = "block";
-             event.currentTarget.className += " active";
-            }
-        </script>
-        <div class="window" style="margin: 5px">
-            <div class="title-bar">
-                <div class="title-bar-text">
-                    • Durgesh (@prob4bly_anon)
-                </div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize"></button>
-                    <button aria-label="Close"></button>
-                </div>
-            </div>
-            <div style='width: 100%; height: 95%;'>
-                <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'about-me')">About Me</button>
-                    <button class="tablinks" onclick="openTab(event, 'what-im-up-to')">What I'm Up To</button>
-                    <button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
-                    <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
-                </div>
-                <section id="about-me" class="tabcontent">
-                    <h4>About Me</h4>
-                    <p>Known as @prob4bly-anon on GitHub. Passionate about programming and software development. Proficient in Python, SQL, JS, Bash. Currently pursuing a career in programming. You can also find me on Instagram as @prob4bly_anon.</p>
-                </section>
-                <section id="what-im-up-to" class='tabcontent'>
-                    <h4>What I'm Up To</h4>
-                    <h5>Currently working on...</h5>
-                    <p>...</p>
-                    <h5>In the near future, I hope to...</h5>
-                    <p>Improve my skills in a specific area of programming.</p>
-                    <h5>One day, I hope to...</h5>
-                    <p>Use my skills to contribute to open-source projects and make a positive impact on the community.</p>
-                </section>
-                <section id="projects" class='tabcontent'>
-                    <h4>Projects</h4>
-                    <div>
-                        <h5>Ransomware Program</h5>
-                        <p>A sample program that encrypts the user's files and demands a ransom to be paid in order to restore access to the files.</p>
-                        <a href="https://github.com/prob4bly-anon/ransomware" class="text-blue-500">View on GitHub</a>
-                    </div>
-                    <div>
-                        <h5>Discord Nuke Bot</h5>
-                        <p>A bot for the Discord chat platform that can nuke discord servers efficiently.</p>
-                        <a href="https://github.com/prob4bly-anon/Discord-Nuker" class="text-blue-500">View on GitHub</a>
-                    </div>
-                </section>
-                <section id="contact" class='tabcontent'>
-                    <h4>Contact</h4>
-                    <div class="field-row-stacked">
-                        <form action="https://formspree.io/f/mvolqnoa" method="post" class='form-container'>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required><br>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required><br>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea><br>
-                            <button type="submit" class="button">Send</button>
-                        </form>
-                    </div>
-                </section>
-            </div>
-        </div>
-         <script> 
-            document.getElementById("about-me").style.display = "block";
-            document.getElementById("about-me").className += " active";
-            document.getElementsByClassName("tablinks")[0].className += " active";
-        </script>
-    </body>
+
+<head>
+	<title>• Durgesh™ (@prob4bly_anon)</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="title" content="Durgesh™">
+	<meta name="description" content="A passionate and aspiring software developer.">
+	<meta name="keywords" content="software development, web development, programming">
+	<meta property="og:title" content="Durgesh™">
+	<meta property="og:description" content="A passionate and aspiring software developer.">
+	<meta property="og:image" content="https://github.com/prob4bly-anon/Prob4bly-anon/raw/main/assets/PicsArt_06-06-04.42.03.jpg">
+	<meta property="og:url" content="https://prob4bly-anon.tk/">
+	<link rel="canonical" href="https://prob4bly-anon.tk/">
+	<link rel="stylesheet" href="https://unpkg.com/98.css">
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@4.19.0/css/xterm.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.js"></script>
+</head>
+
+<body>
+	<script src="js/main.js">
+	</script>
+	<div class="window" style="margin: 5px" id="window1">
+		<div class="title-bar">
+			<div class="title-bar-text"> • Durgesh (@prob4bly_anon) </div>
+			<div class="title-bar-controls">
+				<button aria-label="Minimize"></button>
+				<button aria-label="Maximize"></button>
+				<button aria-label="Close" id='back-button'></button>
+			</div>
+		</div>
+		<div style='width: 100%; height: 95%;'>
+			<div class="tab">
+				<button class="tablinks" onclick="openTab(event, 'about-me')">About Me</button>
+				<button class="tablinks" onclick="openTab(event, 'what-im-up-to')">What I'm Up To</button>
+				<button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
+				<button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+			</div>
+			<section id="about-me" class="tabcontent">
+				<h4>About Me</h4>
+				<p>Known as @prob4bly-anon on GitHub. Passionate about programming and software development. Proficient in Python, SQL, JS, Bash. Currently pursuing a career in programming. You can also find me on Instagram as @prob4bly_anon.</p>
+			</section>
+			<section id="what-im-up-to" class='tabcontent'>
+				<h4>What I'm Up To</h4>
+				<h5>Currently working on...</h5>
+				<p>...</p>
+				<h5>In the near future, I hope to...</h5>
+				<p>Improve my skills in a specific area of programming.</p>
+				<h5>One day, I hope to...</h5>
+				<p>Use my skills to contribute to open-source projects and make a positive impact on the community.</p>
+			</section>
+			<section id="projects" class='tabcontent'>
+				<h4>Projects</h4>
+				<div>
+					<h5>Ransomware Program</h5>
+					<p>A sample program that encrypts the user's files and demands a ransom to be paid in order to restore access to the files.</p>
+					<a href="https://github.com/prob4bly-anon/ransomware" class="text-blue-500">View on GitHub</a>
+				</div>
+				<div>
+					<h5>Discord Nuke Bot</h5>
+					<p>A bot for the Discord chat platform that can nuke discord servers efficiently.</p>
+					<a href="https://github.com/prob4bly-anon/Discord-Nuker" class="text-blue-500">View on GitHub</a>
+				</div>
+			</section>
+			<section id="contact" class='tabcontent'>
+				<h4>Contact</h4>
+				<div class="field-row-stacked">
+					<form action="https://formspree.io/f/mvolqnoa" method="post" class='form-container'>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required><br>
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required><br>
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" rows="5" required></textarea><br>
+						<button type="submit" class="button">Send</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="window" id='window2'>
+		<div class="title-bar">
+			<div class="title-bar-text">Command Prompt</div>
+			<div class="title-bar-controls">
+				<button aria-label="Minimize"></button>
+				<button aria-label="Maximize"></button>
+				<button aria-label="Close"></button>
+			</div>
+		</div>
+		<div class="window-body" style="color: white;">
+			<div id="terminal"></div>
+		</div>
+	</div>
+	<script src="js/index.js">
+	</script>
+</body>
+
 </html>
