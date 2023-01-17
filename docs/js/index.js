@@ -35,7 +35,7 @@ function init() {
 			break;
 		case '\u007F': // Backspace (DEL)
 			// Do not delete the prompt
-			if (term._core.buffer.x > 4 p) {
+			if (term._core.buffer.x > 4) {
 				term.write('\b \b');
 				if (command.length > 0) {
 					command = command.substr(0, command.length - 1);
